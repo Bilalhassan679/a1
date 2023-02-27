@@ -31,6 +31,10 @@ export default function StackNavigatior() {
         name="Setting"
         component={screens.Setting}
       />
+         <Stack.Screen
+        name="CartList"
+        component={screens.CartList}
+      />
       </Stack.Navigator>
     </>
   );
