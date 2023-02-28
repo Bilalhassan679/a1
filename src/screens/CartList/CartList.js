@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native'
 import { useDispatch, useSelector } from 'react-redux'
 import Card from '../../components/Card'
 import { removeCartItem } from '../../redux/CartSlice'
+import { heightPercentageToDP } from 'react-native-responsive-screen'
 
 const CartList = () => {
     const dispatch=useDispatch();
@@ -45,4 +46,12 @@ const CartList = () => {
 
 export default CartList
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    timelineTxt:{
+        fontSize:heightPercentageToDP('3'),
+        fontWeight:'bold',
+        fontFamily:'Roboto',
+        color:'black'
+
+    }
+})

@@ -8,7 +8,6 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { Platform, Dimensions, StyleSheet} from 'react-native';
 import { color } from '../config/color';
 import { screens } from '../screens';
-import { blue100 } from 'react-native-paper/lib/typescript/styles/themes/v2/colors';
 
 
 
@@ -16,7 +15,7 @@ const Tab = createBottomTabNavigator();
 function MybottomTabs() {
   return (
     <Tab.Navigator
-      initialRouteName="Home"
+      initialRouteName="Profile"
       screenOptions={({route}) => ({
         tabBarActiveTintColor: color.black,
         tabBarInactiveTintColor: color.boxColor,
